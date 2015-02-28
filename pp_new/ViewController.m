@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UMFeedback.h"
+#import "FeedBackVC.h"
 
 @interface ViewController ()
 
@@ -31,7 +32,9 @@
 
 -(void) btnClick
 {
-    [self presentViewController:[UMFeedback feedbackModalViewController] animated:YES completion:nil];
+//    [self presentViewController:[UMFeedback feedbackModalViewController] animated:YES completion:nil];
+    FeedBackVC *vc = [FeedBackVC new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
